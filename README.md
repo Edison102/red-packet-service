@@ -1,14 +1,13 @@
 # red-packet-service
 抢红包练习
 
-
-5个API接口
-1.查看所有可抢红包列表
-  GET
-  /api/red-packet-service/redpacket/active
-  参数：无
-  
-  结果：
+5个API接口 <br>
+1.查看所有可抢红包列表 <br>
+  GET <br>
+  /api/red-packet-service/redpacket/active <br>
+  参数：无 <br>
+  <br>
+  结果： <br>
   {
     "code": 200,
     "success": true,
@@ -30,24 +29,24 @@
     "exception": null,
     "exceptionClass": null
   }
-
-2.查看所有历史红包记录
-  GET
-  /api/red-packet-service/redpacket/history
-  参数：无
+<br>
+2.查看所有历史红包记录<br>
+  GET<br>
+  /api/red-packet-service/redpacket/history<br>
+  参数：无<br>
+  <br>
+  结果： 同1<br>
   
-  结果： 同1
-  
-3.创建一个红包
-  post
-  参数：
+3.创建一个红包<br>
+  post<br>
+  参数：<br>
     {
     "user":"测试用户8",
     "total": 300,  //总数
     "amount": 56565645  //金额
     }
 
-  结果：
+  结果：<br>
     {
     "code": 200,
     "success": true,
@@ -61,15 +60,15 @@
     "exceptionClass": null
   }
   
-4.抢红包
-  post
-  参数：
+4.抢红包<br>
+  post<br>
+  参数：<br>
     {
     "user":"xxx",
     "redPacketId": 1605527606489604392
     }
-  
-  结果：
+  <br>
+  结果：<br>
     {
     "code": 200,
     "success": false,
@@ -82,13 +81,13 @@
     "exception": null,
     "exceptionClass": null
    }
-   
- 5.红包详情
-  GET
-  参数：
+   <br>
+ 5.红包详情<br>
+  GET<br>
+  参数：<br>
     ?id=1605527606489604392
    
-  结果：
+  结果：<br>
     {
     "code": 200,
     "success": true,
