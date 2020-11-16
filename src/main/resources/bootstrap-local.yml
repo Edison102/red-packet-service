@@ -1,0 +1,8 @@
+server:
+  port: 8088
+spring:
+  profiles: local
+  redis:
+    database: 1
+    port: 6379
+    host: localhost
